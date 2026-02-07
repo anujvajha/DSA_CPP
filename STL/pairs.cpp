@@ -4,16 +4,16 @@ using namespace std;
 
 int main ()
 {
-    // pair <int, int> p = {1,2};
-    // cout << p.first << " " << p.second << endl;
-    // pair <int, int> p1 = p;
-    // p1.first = 5;
-    // cout << p1.first << endl;
-    // cout << p.first << endl;
+    pair <int, int> p = {1,2};
+    cout << p.first << " " << p.second << endl;
+    pair <int, int> p1 = p;
+    p1.first = 5;
+    cout << p1.first << endl;
+    cout << p.first << endl;
 
 
-    // vector <int> v = {1,2,3};
-    // vector <int> v2 = v;  // O(n)
+    vector <int> v = {1,2,3};
+    vector <int> v2 = v;  // O(n)
 
 
 
