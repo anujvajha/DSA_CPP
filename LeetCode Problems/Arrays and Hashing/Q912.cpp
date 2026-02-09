@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-void merge (vector<int>&nums, int s, int e) 
+void merge (vector<int>&nums, int s, int e) // O(n)
 {
     int n = (e-s)+1;
     vector<int> temp(n);
