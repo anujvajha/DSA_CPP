@@ -8,6 +8,7 @@ bool containsNearbyDuplicate(vector<int>& nums, int k)
     int n = nums.size();
     unordered_set<int> s;
     if(k==0) return false;
+
     for(int i=0; i<n; i++)
     {
         if(s.find(nums[i])!=s.end()) return true;

@@ -4,18 +4,28 @@
 using namespace std;
 
 
-int majorityElement(vector<int>& nums) 
+/* int majorityElement(vector<int>& nums) 
 {
     int n = nums.size();
-    unordered_map<int, int> m;
-    for(int i: nums) m[i]++;
+    sort(nums.begin(), nums.end());
 
-    for(auto&x : m)
+    int f = 1, ans = nums[0];
+    if(n==1) return nums[0];
+    for(int i=1; i<n; i++)
     {
-        if(x.second> n/2) return x.first;
+        if(nums[i]==nums[i-1]) f++;
+        else 
+        {
+            f=1;
+            ans = nums[i];
+        }
+        if(f> n/2) return nums[i];
     }
     return -1;
-}
+}*/
 
-// TC:- O(n)
-// SC:- O(unique values) -> in the worst case all values can be unique -> O(n)
+// TC:- O(nlogn)
+// SC:- O(1)
+
+//optimal solution - moore's algorithm
+
